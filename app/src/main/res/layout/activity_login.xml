@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gym_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/imgGymLogo"
+        tools:ignore="ContentDescription"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/imgGymLogo"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Logowanie"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:hint="Login"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtUserName"
+            tools:ignore="Autofill,HardcodedText,TextFields"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:hint="Haslo"
+            android:layout_marginTop="5dp"
+            android:inputType="numberPassword"
+            android:id="@+id/edtPassword"
+            tools:ignore="Autofill,HardcodedText,TextFields"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Zaloguj"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnLogin"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zapomniales hasla?"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:id="@+id/txtForgotPassword"
+            tools:ignore="HardcodedText"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

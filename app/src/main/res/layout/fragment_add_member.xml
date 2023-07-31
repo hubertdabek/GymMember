@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentAddMember">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.318" >
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="187dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="175dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="411dp"
+                android:layout_height="48dp"
+                android:hint="Imie"
+                android:inputType="text|textCapSentences"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill, HardcodedText"
+                tools:layout_editor_absoluteX="-3dp"
+                tools:layout_editor_absoluteY="169dp" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:hint="Nazwisko"
+                android:inputType="text|textCapSentences"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText"
+                tools:layout_editor_absoluteX="-6dp"
+                tools:layout_editor_absoluteY="216dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Plec: "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <RadioGroup
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/radioGroup"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdMale"
+                        android:layout_width="115dp"
+                        android:layout_height="48dp"
+                        android:checked="true"
+                        android:text="Mezczyzna"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                    <RadioButton
+                        android:id="@+id/rdFeMale"
+                        android:layout_width="95dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:checked="false"
+                        android:text="Kobieta"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:hint="Wiek"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/edtWeight"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:hint="Waga"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/edtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:hint="Telefon"
+                android:inputType="number"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:hint="Adres"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:hint="Data dolaczenia"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:id="@+id/edtJoining"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgPicDate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="zdj"
+                    android:src="@drawable/ic_calendar"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnAddMemberSave"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@color/purple_500"
+                android:text="Zapisz"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/boy"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <ImageView
+        android:id="@+id/imgTakeImage"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPic"
+        app:layout_constraintEnd_toEndOf="@+id/imgPic"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imgPic"
+        app:layout_constraintTop_toTopOf="@+id/imgPic"
+        app:layout_constraintVertical_bias="0.972"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
